@@ -5,15 +5,15 @@ not a production grade application, it's a simple test app. If you would like to
 contribute simple do a PR.
 
 ## Todo:
-  [X] Create app HTML layout
-  [X] Mock HTML
-  [X] Generate simple WAR file to start with
-     [X] Create api with an echo functionality "http://localhost:8080/api/echo/"
-     [X] Create api that returns users ip "http://localhost:8080/api/my_ip/[json,plan]"
-  [ ] Service REST Service "http://localhost:8080/service"
-     [ ] Add Services - "http://localhost:8080/service/add"
-     [ ] Delete Service - "http://localhost:8080/service/Delete"
-     [ ] Test Service - "http://localhost:8080/service/test/[Service Name]"
+  * [x] Create app HTML layout  
+  * [x] Mock HTML
+  * [x] Generate simple WAR file to start with
+     * [x] Create api with an echo functionality "http://localhost:8080/api/echo/"
+     * [x] Create api that returns users ip "http://localhost:8080/api/my_ip/[json,plan]"
+  * [ ] Service REST Service "http://localhost:8080/service"
+     * [ ] Add Services - "http://localhost:8080/service/add"
+     * [ ] Delete Service - "http://localhost:8080/service/Delete"
+     * [ ] Test Service - "http://localhost:8080/service/test/[Service Name]"
 
 ## Development
 This test app uses the spark framework.
@@ -28,7 +28,7 @@ You can generate IDEA project files with:
     gradle idea
 ```
 You can create a war file with:
-**You can find the war file in build/libs/**
+ *You can find the war file in build/libs/*
 ```
     gradle war
 ```
