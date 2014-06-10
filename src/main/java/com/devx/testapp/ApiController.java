@@ -3,11 +3,14 @@ package com.devx.testapp;
 import spark.Request;
 import spark.Response;
 import spark.Route;
-
+import java.sql.SQLException;
+import javax.inject.Inject;
 
 import static spark.Spark.*;
 
 public class ApiController {
+
+    @Inject DbMysql dbMysql;
 
     public void createRoutes() {
         get(new Route("/api/echo/:name") {
@@ -65,6 +68,18 @@ public class ApiController {
             @Override
             public Object handle(Request request, Response response) {
                 return request.params(":name");
+            }
+        });
+
+        //check the mysql version
+        get(new Route("/mysql/version") {
+            @Override
+            public Object handle(Request request, Response response) {
+                try {
+                    return dbMysql.getMySqlVersion();
+                } catch (SQLException e) {
+                    return "Something Went Wrong!!";
+                }
             }
         });
 

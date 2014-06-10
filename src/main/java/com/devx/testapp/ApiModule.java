@@ -7,6 +7,10 @@ import javax.inject.Singleton;
 
 @Module(entryPoints = ApiController.class)
 public class ApiModule {
-    // This will hold all our methods the REST "service"
 
+    @Provides
+    @Singleton
+    DbMysql provideDbMysql() {
+        return new DbMysql();
+    }
 }
