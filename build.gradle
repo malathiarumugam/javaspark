@@ -39,11 +39,10 @@ dependencies {
 
     // other dependencies
     compile 'mysql:mysql-connector-java:5.1.13'
-    //compile "com.almworks.sqlite4java:sqlite4java:0.282"
-    //compile 'com.fasterxml.jackson.core:jackson-core:2.1.1'
-    //compile 'com.fasterxml.jackson.core:jackson-annotations:2.1.1'
-    //compile 'com.fasterxml.jackson.core:jackson-databind:2.1.1'
     compile 'javax.servlet:servlet-api:2.5'
+    compile 'javax.servlet:jstl:1.1.2'
+    compile 'org.apache.taglibs:taglibs-standard-jstlel:1.2.1'
+//    compile 'javax.servlet:jsp-api:2.0'
 //    compile ':standard::2.4'
 
     //compile 'com.google.guava:guava:13.0.1'
