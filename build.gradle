@@ -2,7 +2,7 @@ buildscript {
     repositories {
         mavenCentral()
         mavenLocal()
-        maven { url "http://www.sparkjava.com/nexus/content/repositories/spark/" }
+        maven { url "https://code.google.com/archive/p/spark-java/downloads/" }
         jcenter()
     }
     dependencies {
@@ -25,7 +25,7 @@ repositories {
     mavenCentral()
     mavenLocal()
     jcenter()
-    maven { url "http://www.sparkjava.com/nexus/content/repositories/spark/" }
+    maven { url "https://code.google.com/archive/p/spark-java/downloads/" }
 }
 
 dependencies {
